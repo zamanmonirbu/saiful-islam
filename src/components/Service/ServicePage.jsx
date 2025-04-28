@@ -1,20 +1,25 @@
 import React from 'react';
-import w1 from "../../assets/w1.png";
-import w2 from "../../assets/w2.png";   
-import w3 from "../../assets/w3.png";
-import w4 from "../../assets/w4.png";
+import w1 from "../../assets/Rectangle 16.png";
+import w2 from "../../assets/Rectangle 17.png";   
+import w3 from "../../assets/Rectangle 18.png";
+import w4 from "../../assets/Rectangle 19.png";
+import w5 from "../../assets/Rectangle 20.png";
+import w6 from "../../assets/Rectangle 21.png";
+import w7 from "../../assets/Rectangle 22.png";
+import w8 from "../../assets/Rectangle 23.png";
+
 
 
 
 const categories = [
   { title: "Everyday essentials", img: w1 },
   { title: "Household", img: w2 },
-  { title: "Creative", img: w3 },
-  { title: "Health & beauty", img: w4 },
-  { title: "Information technology", img: w1 },
-  { title: "Professional", img: w2 },
-  { title: "Education", img: w3 },
-  { title: "Tawun Custom Tailored", img: w4 },
+  { title: "Creative", img: w5 },
+  { title: "Health & beauty", img: w6 },
+  { title: "Information technology", img: w3 },
+  { title: "Professional", img: w4 },
+  { title: "Education", img: w7 },
+  { title: "Tawun Custom Tailored", img: w8 },
 
 ];
 
