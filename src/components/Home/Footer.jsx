@@ -41,8 +41,8 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="font-bold text-xl mb-4 text-gray-800">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 hover:text-gray-800">About Tawun</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-800">How it works</a></li>
+              <li><a href="/about" className="text-gray-600 hover:text-gray-800">About Tawun</a></li>
+              <li><a href="/how-it-work" className="text-gray-600 hover:text-gray-800">How it works</a></li>
               <li><a href="#" className="text-gray-600 hover:text-gray-800">Help & support</a></li>
               <li><a href="#" className="text-gray-600 hover:text-gray-800">Terms of service</a></li>
               <li><a href="#" className="text-gray-600 hover:text-gray-800">Privacy policy</a></li>
