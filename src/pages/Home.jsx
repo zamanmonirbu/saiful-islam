@@ -1,7 +1,7 @@
 import Categories from "../components/Home/Categories";
 import HeroSection from "../components/Home/HeroSection";
 import Navbar from "../components/Home/Navbar";
-import TopServies from "../components/Home/TopServices"
+import TopServices from "../components/Home/TopServices"
 import HowItWorks from "../components/Home/HowItWorks";
 import PaymentSecurity from "../components/Home/PaymentSecurity";
 import ProvidersInfo from "../components/Home/ProvidersInfo";
@@ -16,7 +16,7 @@ const Home = () => {
     <HeroSection />
     <Banner />
     <Categories />
-    <TopServies />
+    <TopServices />
     <HowItWorks />
     <PaymentSecurity />
     <ProvidersInfo />

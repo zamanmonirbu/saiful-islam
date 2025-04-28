@@ -1,9 +1,9 @@
+import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
-import trans from '../../assets/trans.png'
-import message from '../../assets/message.png'
-import search from '../../assets/search.png'
-import notifi from '../../assets/notifi.png'
-
+import trans from '../../assets/trans.png';
+import message from '../../assets/message.png';
+import search from '../../assets/search.png';
+import notifi from '../../assets/notifi.png';
 
 const Navbar = () => {
   return (
@@ -14,10 +14,10 @@ const Navbar = () => {
         </div>
         
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="text-black font-medium">Home</a>
-          <a href="#" className="text-black font-medium">Services</a>
-          <a href="#" className="text-black font-medium">About Us</a>
-          <a href="#" className="text-black font-medium">Contact Us</a>
+          <Link to="/" className="text-black font-medium">Home</Link>
+          <Link to="/service" className="text-black font-medium">Services</Link>
+          <Link to="/about" className="text-black font-medium">About Us</Link>
+          <Link to="/contact" className="text-black font-medium">Contact Us</Link>
         </div>
       </div>
       
@@ -30,22 +30,21 @@ const Navbar = () => {
             style={{ borderRadius: '83px' }}
           />
           <img src={search} alt="Search Icon" className="absolute right-3 top-2.5" />
-
         </div>
         
         <div className="flex space-x-3">
-          <a href="#" className="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200">
-            <span className="text-gray-600 text-sm"><img src={trans}></img></span>
-          </a>
-          <a href="#" className="w-6 h-6 flex items-center justify-center rounded-full bg-yellow-100">
-            <span className="text-yellow-600"><img src={message}></img></span>
-          </a>
-          <a href="#" className="w-6 h-6 flex items-center justify-center rounded-full bg-yellow-100">
-            <span className="text-yellow-600"><img src={notifi}></img></span>
-          </a>
+          <Link to="#" className="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200">
+            <span className="text-gray-600 text-sm"><img src={trans} alt="Translate Icon" /></span>
+          </Link>
+          <Link to="#" className="w-6 h-6 flex items-center justify-center rounded-full bg-yellow-100">
+            <span className="text-yellow-600"><img src={message} alt="Message Icon" /></span>
+          </Link>
+          <Link to="#" className="w-6 h-6 flex items-center justify-center rounded-full bg-yellow-100">
+            <span className="text-yellow-600"><img src={notifi} alt="Notification Icon" /></span>
+          </Link>
           
-          <a 
-            href="#" 
+          <Link 
+            to="#" 
             className="text-white px-4 py-1 text-sm" 
             style={{
               width: '130px',
@@ -58,7 +57,7 @@ const Navbar = () => {
             }}
           >
             Sign Up
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

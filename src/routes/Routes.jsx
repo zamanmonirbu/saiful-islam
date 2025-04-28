@@ -8,12 +8,18 @@ import AdminHome from '../pages/Dashboard/Admin/AdminHome';
 import PrivateRoute from './PrivateRoute';
 import SellerRoute from './SellerRoute';
 import AdminRoute from './AdminRoute';
+import HowItWorks from '../pages/HowItWorks';
+import Service from '../pages/Service';
+import About from '../pages/About';
 
 const AllRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='/how-it-work' element={<HowItWorks/>}/>
+        <Route path="/service" element={<Service/>} />
+        <Route path="/about" element={<About/>} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
