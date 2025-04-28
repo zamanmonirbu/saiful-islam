@@ -10,7 +10,9 @@ const Navbar = () => {
     <nav className="flex justify-between items-center py-6 px-32">
       <div className="flex items-center">
         <div className="mr-6">
-          <img src={logo} alt="Tawun Logo" className="h-8" />
+          <Link to="/">
+            <img src={logo} alt="Tawun Logo" className="h-10 pr-10" />
+          </Link>
         </div>
         
         <div className="hidden md:flex space-x-6">

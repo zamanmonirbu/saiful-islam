@@ -23,6 +23,10 @@ const categories = [
   { name: 'Home & garden', image: category5, bgColor: 'bg-[#F2C464]' },
 
 ];
+
+
+
+
 const TopServices = () => {
   return (
     <section className="py-6 px-32">
