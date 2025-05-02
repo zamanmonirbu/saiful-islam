@@ -38,10 +38,10 @@ const Navbar = () => {
           <Link to="#" className="w-6 h-6 flex items-center justify-center rounded-full bg-gray-200">
             <span className="text-gray-600 text-sm"><img src={trans} alt="Translate Icon" /></span>
           </Link>
-          <Link to="#" className="w-6 h-6 flex items-center justify-center rounded-full bg-yellow-100">
+          <Link to="chat" className="w-6 h-6 flex items-center justify-center rounded-full bg-yellow-100">
             <span className="text-yellow-600"><img src={message} alt="Message Icon" /></span>
           </Link>
-          <Link to="#" className="w-6 h-6 flex items-center justify-center rounded-full bg-yellow-100">
+          <Link to="notifications" className="w-6 h-6 flex items-center justify-center rounded-full bg-yellow-100">
             <span className="text-yellow-600"><img src={notifi} alt="Notification Icon" /></span>
           </Link>
           

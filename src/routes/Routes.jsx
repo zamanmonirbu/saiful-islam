@@ -29,6 +29,9 @@ import Commercial from '../pages/Commercial';
 import TawunTailoredServices from '../pages/TawunTailoredServices';
 import InformationTechnology from '../pages/InformationTechnology';
 import Category from '../pages/Category';
+import CustomersChat from '../pages/CustomersChats';
+import Userprofile from '../pages/UserProfile';
+import NotificationsPage from '../pages/NotificationsPage';
 
 const AllRoutes = () => {
   return (
@@ -39,6 +42,11 @@ const AllRoutes = () => {
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/category" element={<Category/>} />
+        <Route path="/chat" element={<CustomersChat/>} />
+        <Route path="/profile" element={<Userprofile />} />
+        <Route path="/notifications" element={<NotificationsPage />} />
+        
+
         
 
 
