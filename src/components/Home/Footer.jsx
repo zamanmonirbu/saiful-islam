@@ -26,15 +26,15 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="font-bold text-xl mb-4 text-gray-800">Categories</h3>
             <ul className="space-y-2">
-              <li><Link to="/everyday-essentials" className="text-gray-600 hover:text-gray-800">Everyday essentials</Link></li>
-              <li><Link to="/household" className="text-gray-600 hover:text-gray-800">Household</Link></li>
-              <li><Link to="/professional" className="text-gray-600 hover:text-gray-800">Professional</Link></li>
-              <li><Link to="/education" className="text-gray-600 hover:text-gray-800">Education</Link></li>
-              <li><Link to="/creative" className="text-gray-600 hover:text-gray-800">Creative</Link></li>
-              <li><Link to="/information-technology" className="text-gray-600 hover:text-gray-800">Information technology</Link></li>
-              <li><Link to="/specialized" className="text-gray-600 hover:text-gray-800">Specialized</Link></li>
-              <li><Link to="/commercial" className="text-gray-600 hover:text-gray-800">Commercial</Link></li>
-              <li><Link to="/tawun-tailored-services" className="text-gray-600 hover:text-gray-800">Tawun Tailored Services</Link></li>
+              <li><Link to="/category/everyday-essentials" className="text-gray-600 hover:text-gray-800">Everyday essentials</Link></li>
+              <li><Link to="/category/household" className="text-gray-600 hover:text-gray-800">Household</Link></li>
+              <li><Link to="/category/professional" className="text-gray-600 hover:text-gray-800">Professional</Link></li>
+              <li><Link to="/category/education" className="text-gray-600 hover:text-gray-800">Education</Link></li>
+              <li><Link to="/category/creative" className="text-gray-600 hover:text-gray-800">Creative</Link></li>
+              <li><Link to="/category/information-technology" className="text-gray-600 hover:text-gray-800">Information technology</Link></li>
+              <li><Link to="/category/specialized" className="text-gray-600 hover:text-gray-800">Specialized</Link></li>
+              <li><Link to="/category/commercial" className="text-gray-600 hover:text-gray-800">Commercial</Link></li>
+              <li><Link to="/category/tawun-tailored-services" className="text-gray-600 hover:text-gray-800">Tawun Tailored Services</Link></li>
             </ul>
           </div>
 

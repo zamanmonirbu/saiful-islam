@@ -32,6 +32,10 @@ import Category from '../pages/Category';
 import CustomersChat from '../pages/CustomersChats';
 import Userprofile from '../pages/UserProfile';
 import NotificationsPage from '../pages/NotificationsPage';
+import JobDetails from '../pages/JobDetails';
+import JobApplyForm from '../pages/JobApplyForm';
+// import JobApplyForm from '../components/Career/JobApply';
+import ProviderProfile from '../pages/ProviderProfile';
 
 const AllRoutes = () => {
   return (
@@ -41,10 +45,11 @@ const AllRoutes = () => {
         <Route path="/service" element={<Service/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
-        <Route path="/category" element={<Category/>} />
+        <Route path="/category/:category" element={<Category/>} />
         <Route path="/chat" element={<CustomersChat/>} />
         <Route path="/profile" element={<Userprofile />} />
         <Route path="/notifications" element={<NotificationsPage />} />
+        <Route path="/provider-profile" element={<ProviderProfile />} />
         
 
         
@@ -55,6 +60,9 @@ const AllRoutes = () => {
         <Route path="/terms-service" element={<TermsOfServices />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/job/:jobId" element={<JobDetails />} />
+        <Route path="/apply/job/:jobId" element={<JobApplyForm   />} />
+
         <Route path="/investors" element={<Investors />} />
         <Route path="/charity" element={<Charity />} />
         <Route path="/community" element={<Community />} />
