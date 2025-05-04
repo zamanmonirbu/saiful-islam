@@ -30,7 +30,7 @@ const categories = [
 const TopServices = () => {
   return (
     <section className="py-6 px-32">
-      <h2 className="text-left text-3xl font-bold mb-8">Categories</h2>
+      <h2 className="text-left text-3xl font-bold mb-8">Top Services</h2>
       <div className="flex flex-wrap gap-6">
         {categories.map((cat, index) => (
           <Link key={index} to={`/category/${cat.name}`} style={{ height: '120px', width: '120px' }}>
