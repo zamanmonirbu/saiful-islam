@@ -15,7 +15,7 @@ const PopularPostsSection = () => {
       id: 2,
       avatar: img,
       username: 'Linuxoid',
-      timeAgo: '3 hrs ago',
+      timeAgo: '5 hrs ago',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum vitae etiam lectus amet enim.'
     }
   ];
@@ -38,7 +38,7 @@ const PopularPostsSection = () => {
                   <div className="text-xs text-gray-500">{post.timeAgo}</div>
                 </div>
               </div>
-              <button className="text-gray-500 flex items-center">
+              {/* <button className="text-gray-500 flex items-center">
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   fill="none" 
@@ -49,8 +49,8 @@ const PopularPostsSection = () => {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
                 </svg>
-                <span className="ml-2 text-sm">3</span>
-              </button>
+               
+              </button> */}
             </div>
             <h3 className="font-medium mb-2">It was a great experience for me..</h3>
             <p className="text-gray-700 text-sm">

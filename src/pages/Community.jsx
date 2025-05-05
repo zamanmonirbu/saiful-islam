@@ -5,6 +5,7 @@ import ForumHeader from '../components/Community/ForumHeader'
 import ForumGuide from '../components/Community/ForumGuide'
 import CategoriesSection from '../components/Community/CategoriesSection'
 import PopularPostsSection from '../components/Community/PopularPostsSection'
+import Feed from './Feed'
 
 export default function Community() {
   return (
@@ -14,6 +15,7 @@ export default function Community() {
         <ForumGuide/>
         <CategoriesSection/>
         <PopularPostsSection/>
+        <Feed/>
         <Footer/>
     </div>
   )

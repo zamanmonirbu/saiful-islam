@@ -43,7 +43,7 @@ const TabsNavigation = ({ onTabChange }) => {
       >
         Order history
       </button>
-      <button
+      {/* <button
         className={`py-3 px-6 text-center ${
           activeTab === 'medals'
             ? 'bg-amber-100 font-medium'
@@ -52,7 +52,7 @@ const TabsNavigation = ({ onTabChange }) => {
         onClick={() => handleTabClick('medals')}
       >
         Medals
-      </button>
+      </button> */}
     </div>
   );
 };

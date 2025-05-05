@@ -1,3 +1,6 @@
+
+
+
 // File: src/components/ProfileHeader.jsx
 import React, { useState } from 'react';
 import LogoutButton from './LogoutButton';
@@ -18,8 +21,8 @@ const ProfileHeader = ({ name, email, avatarUrl }) => {
   };
 
   return (
-    <div className="bg-white p-16 rounded-md shadow-sm relative mb-8  py-8 px-4 pb-24 md:px-8 max-w-7xl mx-auto">
-      <div className="absolute top-6 left-6">
+    <div className="bg-white p-16 rounded-md shadow-sm relative mx-32 mb-12">
+      <div className="absolute top-6 left-6 bg-red-500 rounded-md  ">
         <LogoutButton />
       </div>
       
