@@ -6,6 +6,7 @@ import ServiceProvider from '../components/PaymentMethod/ServiceProvider'
 import Calendar from '../components/PaymentMethod/Calendar'
 import DateTimePicker from '../components/PaymentMethod/DateTimePicker'
 import PaymentForm from '../components/PaymentMethod/PaymentForm'
+import TimeBox from '../components/PaymentMethod/TimeBox'
 
 export default function PaymentMethod() {
   return (
@@ -16,8 +17,9 @@ export default function PaymentMethod() {
       <ServiceProvider />
       <DateTimePicker />
       <Calendar />
+      <TimeBox />
       <PaymentForm />
-      
+
 
       <Footer />
     </div>
