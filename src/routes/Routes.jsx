@@ -36,6 +36,7 @@ import JobDetails from '../pages/JobDetails';
 import JobApplyForm from '../pages/JobApplyForm';
 // import JobApplyForm from '../components/Career/JobApply';
 import ProviderProfile from '../pages/ProviderProfile';
+import PaymentMethod from '../pages/PaymentMethod';
 
 const AllRoutes = () => {
   return (
@@ -50,6 +51,9 @@ const AllRoutes = () => {
         <Route path="/profile" element={<Userprofile />} />
         <Route path="/notifications" element={<NotificationsPage />} />
         <Route path="/provider-profile" element={<ProviderProfile />} />
+
+        <Route path="/paymentmethod" element={<PaymentMethod />} />
+     
         
 
         
