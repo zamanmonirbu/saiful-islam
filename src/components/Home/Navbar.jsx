@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../../context/AuthContext';
 import logo from '../../assets/logo.png';
 import trans from '../../assets/trans.png';
 import message from '../../assets/message.png';
@@ -6,6 +8,8 @@ import search from '../../assets/search.png';
 import notifi from '../../assets/notifi.png';
 
 const Navbar = () => {
+  const { user} = useContext(AuthContext);
+
   return (
     <nav className="flex justify-between items-center py-6 px-32">
       <div className="flex items-center">
@@ -34,30 +38,39 @@ const Navbar = () => {
           <img src={search} alt="Search Icon" className="absolute right-3 top-2.5" />
         </div>
         
-        <div className="flex space-x-3">
-        
+        <div className="flex space-x-3 items-center">
           <Link to="/chat" className="w-6 h-6 flex items-center justify-center rounded-full bg-yellow-100">
-            <span className="text-yellow-600"><img src={message} alt="Message Icon" /></span>
+            <img src={message} alt="Message Icon" />
           </Link>
           <Link to="/notifications" className="w-6 h-6 flex items-center justify-center rounded-full bg-yellow-100">
-            <span className="text-yellow-600"><img src={notifi} alt="Notification Icon" /></span>
+            <img src={notifi} alt="Notification Icon" />
           </Link>
-          
-          <Link 
-            to="#" 
-            className="text-white px-4 py-1 text-sm" 
-            style={{
-              width: '130px',
-              height: '32px',
-              borderRadius: '8px',
-              background: '#E0D1AF',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}
-          >
-            Sign Up
-          </Link>
+
+          {user ? (
+            <Link to="/user/dashboard">
+              <img 
+                src={user?.user_information && user?.user_information?.image || '/default-profile.png'} 
+                alt="User" 
+                className="w-8 h-8 rounded-full border border-gray-300"
+              />
+            </Link>
+          ) : (
+            <Link 
+              to="/login" 
+              className="text-white px-4 py-1 text-sm" 
+              style={{
+                width: '130px',
+                height: '32px',
+                borderRadius: '8px',
+                background: '#E0D1AF',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+            >
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </nav>

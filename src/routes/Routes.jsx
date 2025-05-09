@@ -37,6 +37,8 @@ import JobApplyForm from '../pages/JobApplyForm';
 // import JobApplyForm from '../components/Career/JobApply';
 import ProviderProfile from '../pages/ProviderProfile';
 import PaymentMethod from '../pages/PaymentMethod';
+import ForgotPassword from '../pages/Auth/ForgotPassword';
+import VerifyCode from '../pages/Auth/VerifyCode';
 
 const AllRoutes = () => {
   return (
@@ -48,7 +50,7 @@ const AllRoutes = () => {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/category/:category" element={<Category/>} />
         <Route path="/chat" element={<CustomersChat/>} />
-        <Route path="/profile" element={<Userprofile />} />
+        <Route path="/user/dashboard" element={<Userprofile />} />
         <Route path="/notifications" element={<NotificationsPage />} />
         <Route path="/provider-profile" element={<ProviderProfile />} />
 
@@ -97,6 +99,12 @@ const AllRoutes = () => {
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/auth/verify" element={<VerifyCode />} />
+        {/* <Route path="/reset-password/:token" element={<ResetPassword />} /> */}
+        {/* <Route path="/change-password" element={<ChangePassword />} />
+        <Route path="/update-profile" element={<UpdateProfile />} /> */}
+        {/* <Route path="/logout" element={<Logout />} /> */}
 
         <Route path="/user/dashboard" element={<PrivateRoute><UserHome /></PrivateRoute>} />
         <Route path="/seller/dashboard" element={<SellerRoute><SellerHome /></SellerRoute>} />

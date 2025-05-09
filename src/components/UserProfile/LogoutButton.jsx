@@ -4,8 +4,9 @@ import React from 'react';
 
 const LogoutButton = () => {
   const handleLogout = () => {
-    // Handle logout functionality
-    console.log('User logged out');
+    localStorage.removeItem('user');
+    localStorage.removeItem('token');
+    window.location.href = '/';
   };
 
   return (

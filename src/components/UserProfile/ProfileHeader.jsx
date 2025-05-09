@@ -1,13 +1,10 @@
-
-
-
 // File: src/components/ProfileHeader.jsx
 import React, { useState } from 'react';
 import LogoutButton from './LogoutButton';
 import ava from '../../assets/Ava.png';
 
-const ProfileHeader = ({ name, email, avatarUrl }) => {
-  const [currentAvatar, setCurrentAvatar] = useState(avatarUrl || ava);
+const ProfileHeader = ({ user }) => {
+  const [currentAvatar, setCurrentAvatar] = useState(user?.user_information?.image || "");
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
@@ -29,8 +26,8 @@ const ProfileHeader = ({ name, email, avatarUrl }) => {
       <div className="flex flex-col items-center justify-center pt-10">
         <div className="relative mb-4">
           <img 
-            src={currentAvatar} 
-            alt={name} 
+            src={user?.user_information?.image || ava} 
+            alt={user?.user_information?.name || 'User Avatar'} 
             className="w-20 h-20 rounded-full object-cover"
           />
           <div className="absolute bottom-0 right-0">
@@ -46,8 +43,6 @@ const ProfileHeader = ({ name, email, avatarUrl }) => {
             />
           </div>
         </div>
-        <h1 className="text-xl font-medium">{name} jones</h1>
-        <p className="text-gray-500 text-sm">{email}jones@gmail.com</p>
       </div>
     </div>
   );

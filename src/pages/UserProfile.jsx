@@ -1,5 +1,5 @@
 // File: src/components/UserProfile.jsx
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import AccountDetailsForm from '../components/UserProfile/AccountDetailsForm';
 import PasswordChangeForm from '../components/UserProfile/PasswordChangeForm';
 import OrderHistoryTable from '../components/UserProfile/OrderHistoryTable';
@@ -8,10 +8,14 @@ import ProfileHeader from '../components/UserProfile/ProfileHeader';
 import LogoutButton from '../components/UserProfile/LogoutButton';
 import TabsNavigation from '../components/UserProfile/TabsNavigation';
 import Navbar from '../components/Home/Navbar';
+import { AuthContext } from '../context/AuthContext';
 
 
 const UserProfile = () => {
   const [activeTab, setActiveTab] = useState('account');
+  const { user } = useContext(AuthContext);
+
+
 
   // Handle tab change from TabsNavigation component
   const handleTabChange = (tab) => {
@@ -22,7 +26,7 @@ const UserProfile = () => {
   const renderTabContent = () => {
     switch (activeTab) {
       case 'account':
-        return <AccountDetailsForm />;
+        return <AccountDetailsForm user={user}/>;
       case 'password':
         return <PasswordChangeForm />;
       case 'orders':
@@ -37,7 +41,7 @@ const UserProfile = () => {
   return (
     <div className=" ">
       <Navbar />
-      <ProfileHeader />
+      <ProfileHeader user={user}/>
       
       {/* Tab Navigation */}
       <TabsNavigation onTabChange={handleTabChange} />
